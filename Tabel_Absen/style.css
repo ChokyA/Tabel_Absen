@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.container table{
+    border-collapse: collapse; 
+    border-radius: 6px;
+    overflow: hidden;
+    font-weight: 400;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .126);
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+}
+
+.container table thead{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container table tbody{
+    font-size: 12px;
+    border:1px solid rgba(0, 0, 0, 0.103);
+}
+
+.container table tr th, td{
+    padding: 12px 14px; 
+}
+
+.container table tbody tr td:nth-child(1), td:nth-child(3), td:nth-child(4), td:nth-child(5){
+    text-align: center;
+}
+
+.container table tbody tr td:nth-child(1){
+  border-right: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.container table tbody tr:nth-child(even){
+    background-color: #fff;
+}
+
+.container table tbody tr:nth-child(even):hover, .container table tbody tr:nth-child(odd):hover{
+    background-color: #E4E4E1;
+ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+    cursor: pointer;
+    transition: .2s all;
+}
+
